@@ -1,4 +1,4 @@
-// HOME WORK 15
+// HOME WORK 
 
 // Quadratic equation
 const calculate = (a, b, c) => {
