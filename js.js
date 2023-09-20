@@ -3,17 +3,17 @@
 const obj = {
   from: 1,
   to: 10,
-};
-
-const createArr = () => {
-  const arr = [];
-  for (let i = this.from; i <= this.to; i++) {
-    arr.push(i);
+  createArr: function() {
+    const arr = [];
+    for (let i = this.from; i <= this.to; i++) {
+      arr.push(i);
+    }
+    this.arr = arr;
   }
-  obj.arr = arr;
 };
 
-createArr();
+obj.createArr();
+
 console.log(obj.arr); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // Solution 2: Використовуючи bind
