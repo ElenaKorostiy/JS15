@@ -7,7 +7,7 @@ const obj = {
 
 const createArr = () => {
   const arr = [];
-  for (let i = obj.from; i <= obj.to; i++) {
+  for (let i = this.from; i <= this.to; i++) {
     arr.push(i);
   }
   obj.arr = arr;
