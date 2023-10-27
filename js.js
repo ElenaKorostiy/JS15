@@ -14,6 +14,4 @@ function updateTaskList() {
 
 window.addEventListener("load", updateTaskList);
 
-window.addEventListener("beforeunload", function (event) {
-    event.returnValue = "Ви впевнені, що хочете залишити цю сторінку?";
-});
+window.localStorage(tasks);
