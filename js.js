@@ -12,10 +12,8 @@ function updateTaskList() {
     }
 }
 
-// Запуск функції оновлення списку при завантаженні сторінки
 window.addEventListener("load", updateTaskList);
 
-// Заборона видалення завдань
 window.addEventListener("beforeunload", function (event) {
     event.returnValue = "Ви впевнені, що хочете залишити цю сторінку?";
 });
